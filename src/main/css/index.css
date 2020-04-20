@@ -1,0 +1,18 @@
+/*! | superflycss/component-link |
+    | MIT License                |
+    | https://github.com/superflycss/component-link/blob/master/LICENSE.md */
+
+:root {
+    --Bullseye-padding: 2rem;
+    --Bullseye-margin: 2rem;
+    --Bullseye-background-color: inherit;
+}
+
+.Bullseye {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--Bullseye-padding);
+    margin: var(--Bullseye-margin);
+    background-color: var(--Bullseye-background-color);
+}

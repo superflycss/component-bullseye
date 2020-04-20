@@ -1,0 +1,48 @@
+{
+  "name": "@superflycss/component-bullseye",
+  "version": "1.0.0",
+  "description": "Bullseye component",
+  "main": "index.css",
+  "scripts": {
+    "ig": "npm i-g @superflycss/cli && npm install -g @jsdevtools/version-bump-prompt && npm install -g npm-check-updates && npm install -g npm-install-peers",
+    "u": "ncu -u && npm i",
+    "b": "sfc b",
+    "d": "sfc d",
+    "p": "bump patch && sfc dist && cd dist && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superflycss/component-bullseye.git"
+  },
+  "keywords": [
+    "css",
+    "superflycss",
+    "bullseye",
+    "component"
+  ],
+  "author": "Ole Ersoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/superflycss/component-bullseye/issues"
+  },
+  "homepage": "https://github.com/superflycss/component-bullseye#readme",
+  "dependencies": {
+    "@superflycss/variables-dimension": "^2.0.5"
+  },
+  "devDependencies": {
+    "@superflycss/component-body": "^1.0.4",
+    "@superflycss/component-display": "^1.0.9",
+    "@superflycss/component-header": "^2.1.0",
+    "@superflycss/component-test": "^3.6.30",
+    "@superflycss/foundation": "^2.0.3",
+    "@superflycss/superflycss": "^1.0.8",
+    "@superflycss/utilities-colors": "^3.2.9",
+    "@superflycss/utilities-effects": "^2.1.3",
+    "@superflycss/utilities-fonts": "^3.3.8",
+    "@superflycss/utilities-format": "^1.2.9",
+    "@superflycss/utilities-layout": "^4.0.25",
+    "@superflycss/variables-layout": "^2.0.0",
+    "lite-server": "^2.5.4",
+    "npm-check-updates": "^4.1.2"
+  }
+}

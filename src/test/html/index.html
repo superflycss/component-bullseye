@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% import "@superflycss/component-test/TestHead.njk" as TestHead %}
+{% import "@superflycss/component-test/TestHeader.njk" as TestHeader %}
+{% import "@superflycss/component-test/TestTemplate.njk" as Test %}
+
+{{ TestHead.component( 'bullseye' ) }}
+
+<body class="Body">
+
+    {{ TestHeader.component( 'bullseye' ) }}
+
+    <!-- START TEST -->
+    {% set when %}
+    <code class="u-text-color-md-pink-400">Bullseye</code> is the container.
+    {% endset %}
+    {% call Test.component( 'Bullseye', when, 'Contained elements are centered horizontally and vertically.' ) %}
+
+<div style="font-size: 25px; 
+            color: black; width: 300px; 
+            height: 300px; 
+            background-color: yellow" 
+       class="Bullseye">
+    <p style="padding:1rem; 
+              background-color:white"> Word to the Dalai Lama!.</p>
+</div>
+<div style="font-size: 25px; 
+            color: gray; 
+            width: 300px; 
+            height: 300px; 
+            background-color: linen" 
+            class="Bullseye">
+    <i style="font-size: 8rem;" 
+       class="material-icons">face</i>
+</div>
+    {% endcall %}
+</body>
+
+</html>
